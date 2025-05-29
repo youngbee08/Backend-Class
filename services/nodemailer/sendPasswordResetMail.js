@@ -20,7 +20,7 @@ const sendPasswordResetEmail = (email,userFirstName,token)=>{
                     <p style="margin-bottom: 20px;">Hello,${userFirstName}</p>
                     <p style="margin-bottom: 20px;">We received a request to reset your password. If you made this request, click the button below to reset your password:</p>
                     <p style="text-align: center; margin: 30px 0;">
-                        <a href="http://localhost:5173/resetPassword/${token}" style="background-color: #2b6cb0; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 4px; display: inline-block;">Reset Password</a>
+                        <a href="${process.env.client_domain}/resetPassword/${token}" style="background-color: #2b6cb0; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 4px; display: inline-block;">Reset Password</a>
                     </p>
                     <p style="margin-bottom: 20px;">If you didn't request a password reset, please ignore this email or contact support if you have questions.</p>
                     <p style="margin-bottom: 0;">Thanks,<br><strong>Your Backend Class</strong></p>
