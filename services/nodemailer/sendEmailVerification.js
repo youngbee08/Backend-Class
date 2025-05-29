@@ -9,7 +9,7 @@ const sendEmailVerification = (email,userFirstName,token)=>{
           <div style="background: white; padding: .5rem;">
             <h2>Hi,${userFirstName}</h2>
             <p>Welcome to our website,verify your account now</p>
-            <a href="${process.env.client_domain}verify/${token}" style="background: blue; color: white; padding: .5rem 1rem; border: none; border-radius: 5px;">
+            <a href="${process.env.client_domain}/verify/${token}" style="background: blue; color: white; padding: .5rem 1rem; border: none; border-radius: 5px;">
               Verify
             </a>
           </div>
